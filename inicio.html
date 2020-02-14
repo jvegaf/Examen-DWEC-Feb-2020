@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>  
+<head>
+  <meta charset="UTF-8">
+  <title> Jose Vega EXAMEN</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+  <h1> Roberto Bolaño</h1>
+  <div class="contenedor">
+    <div id="divBotones" class="contenido">
+    </div>
+  </div>
+  <br>
+  <form id="editaParrafo">
+
+    <fieldset>
+      <legend>Control</legend>
+      <label for="numParrafo"> Nº párrafo:</label><br>
+      <input type="text" id="numParrafo" size="5" value="1">
+      <br><br><br>
+      <input type="button" onclick="addParagraph()" value="añadir"><br>
+      <input  type="button" onclick="removeParagraph()" value="eliminar"><br>
+    </fieldset>
+    <fieldset>
+      <legend>Texto a insertar:</legend>
+      <textarea id="textonuevo" rows="7" cols="45" name="comment"
+        form="anadeParr">Escribe el texto aquí mismo...</textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Escritor</legend>
+      <label for="numParrafo"> Nº Escritor/a: <input id="idEscritor" type="text" size="5" value=""><br></label><br>
+      <input id="nomEscritor" type="text" size="25" value="" placeholder="Nombre Escritor"><br>
+      <input id="nomLibro"type="text" size="25" value="" placeholder="Titulo"><br>
+      <input id="nacEscritor"type="text" size="25" value="" placeholder="Pais de Nacimiento"><br>
+      <input id="botonBuscar" type="button" value="busca"><br>
+      <input id="botonAgregar" type="button" value="Agregar"><br>
+    </fieldset>
+
+  </form>
+  <div id="contenedorTexto">
+    <p id="contenidos_1">Roberto Bolaño nació en <a href="https://es.wikipedia.org/wiki/Santiago_de_Chile"> Santiago de Chile</a> el 28 de
+      abril de 1953. Su infancia la pasó en en diferentes ciudades de Chile: Quilpué, Cauquenes, Viña del Mar y Los
+      Ángeles; donde cursó sus primeros estudios. A los quince años se estableció junto a su familia en el Distrito
+      Federal, capital de México, donde realizó los estudios secundarios. En 1973 volvió a Chile en los meses previos al
+      golpe militar de Pinochet, realizó un largo viaje por mar y tierra, con el propósito de apoyar al gobierno de
+      Salvador Allende, fue apresado y permaneció ocho días en la cárcel. </p id="contenidos_1">
+    <p id="contenidos_2">En enero de 1974 volvió a <a href="https://es.wikipedia.org/wiki/M%C3%A9xico">México</a>, donde conoció a los
+      poetas Mario Santiago y Bruno Montané, junto a quienes fundó un movimiento de vanguardia literaria al que bautizaron
+      como Infrarrealismo. El movimiento contó con dos revistas: 'Rimbaud, vuelve a casa' y 'Correspondencia Infra'.</p id="contenidos_1">
+    <p id="contenidos_3">En 1978 se instaló en <a href="https://es.wikipedia.org/wiki/Barcelona">Barcelona</a> donde su madre vivía desde
+      hacía años. Llegó a una ciudad en plena efervescencia postfranquista, en la que todo parecía posible, que lo
+      conquistó de inmediato. Al cabo de unos pocos años se trasladó a Girona, y en el pueblo de Blanes se casó, nacieron
+      sus hijos.</p id="contenidos_3">
+    <p id="contenidos_4">A Roberto Bolaño el reconocimiento le llegó tarde. En 1993 publicó la novela La pista de hielo, y en 1996 La
+      literatura nazi en América. Con <a
+        href="https://www.anagrama-ed.es/libro/compactos/estrella-distante/9788433966735/CM_242">Estrella distante</a>,
+      consolidó la reputación recién adquirida, y el libro de cuentos Llamadas telefónicas, lo consagró como uno de los
+      mejores escritores contemporáneos de Hispanoamérica. Los premios le llegarían poco después, con su siguiente novela
+      Los detectives salvajes, publicada en 1998, que le valió el Premio Herralde, el Premio del Consejo de Chile en 1999
+      y el Premio Rómulo Gallegos en el mismo año. Los detectives salvajes, que el editor Jorge Herralde calificó de
+      "thriller wellesiano", está protagonizada por dos hombres embarcados en la búsqueda durante veinte años de una
+      escritora mexicana desaparecida durante la revolución, y contiene rasgos autobiográficos. La novela se desarrolla en
+      multitud de países: Liberia, Israel, Angola, Francia, Estados Unidos, España... y representa a una generación nacida
+      en los años cincuenta a la que une un cierto nomadismo, la entrega a ideales revolucionarios, el deseo de cambiarlo
+      todo y la utopía de la revolución.</p id="contenidos_1">
+    <p id="contenidos_5">Bolaño era admirador de los beatniks y fanático de <a href="https://es.wikipedia.org/wiki/Lou_Reed">Lou Reed</a>,
+      pero también devoto de Borges y Cortázar, entendía su obra como un conjunto estilístico y argumental, donde los
+      personajes aparecen y desaparecen para dialogar entre sí, y para enriquecer igualmente las vidas de los lectores.
+    </p>
+    <p id="contenidos_6">Bolaño murió el 15 de julio de 2003, desde entonces su <a
+        href="https://es.wikipedia.org/wiki/Obra_literaria">obra</a> ha adquirido un merecido reconocimiento mundial.</p id="contenidos_6">
+     </div>
+</body>
+<script src="escritores.js"> </script>
+
+</html>
